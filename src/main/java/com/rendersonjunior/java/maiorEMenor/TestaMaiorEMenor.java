@@ -1,5 +1,6 @@
 package com.rendersonjunior.java.maiorEMenor;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class TestaMaiorEMenor {
@@ -14,8 +15,8 @@ public class TestaMaiorEMenor {
         final var algoritmo = new MaiorEMenor();
         algoritmo.encontra(carrinho);
 
-        System.out.println("O menor produto: ".concat(algoritmo.getMenor().getNome()));
-        System.out.println("O maior produto: ".concat(algoritmo.getMaior().getNome()));
+        Assert.assertEquals("Jogo de Pratos", algoritmo.getMenor().getNome());
+        Assert.assertEquals("Geladeira", algoritmo.getMaior().getNome());
     }
 
     @Test
@@ -29,8 +30,8 @@ public class TestaMaiorEMenor {
         final var algoritmo = new MaiorEMenor();
         algoritmo.encontra(carrinho);
 
-        System.out.println("O menor produto: ".concat(algoritmo.getMenor().getNome()));
-        System.out.println("O maior produto: ".concat(algoritmo.getMaior().getNome()));
+        Assert.assertEquals("Jogo de Pratos", algoritmo.getMenor().getNome());
+        Assert.assertEquals("Geladeira", algoritmo.getMaior().getNome());
     }
 
     public static void main(String[] args) {
