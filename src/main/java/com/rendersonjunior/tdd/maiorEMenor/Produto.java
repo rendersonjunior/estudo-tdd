@@ -1,4 +1,4 @@
-package com.rendersonjunior.java.maiorEMenor;
+package com.rendersonjunior.tdd.maiorEMenor;
 
 public class Produto {
     private String nome;

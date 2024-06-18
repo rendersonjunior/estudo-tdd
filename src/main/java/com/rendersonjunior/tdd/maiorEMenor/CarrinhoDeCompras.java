@@ -1,4 +1,4 @@
-package com.rendersonjunior.java.maiorEMenor;
+package com.rendersonjunior.tdd.maiorEMenor;
 
 import java.util.ArrayList;
 import java.util.List;
