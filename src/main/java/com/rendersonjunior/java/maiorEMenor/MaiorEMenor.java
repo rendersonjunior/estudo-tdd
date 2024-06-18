@@ -12,7 +12,7 @@ public class MaiorEMenor {
             if (isNull(menor) || produto.getValor() < menor.getValor()) {
                 menor = produto;
             }
-            else if (isNull(maior) || produto.getValor() > maior.getValor()) {
+            if (isNull(maior) || produto.getValor() > maior.getValor()) {
                 maior = produto;
             }
         }
