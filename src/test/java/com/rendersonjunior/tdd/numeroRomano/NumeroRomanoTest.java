@@ -34,6 +34,18 @@ public class NumeroRomanoTest {
         assertEquals(22, numero);
     }
 
+    @Test
+    public void deveEntenderNumerosComoIX() {
+        final ConversorDeNumeroRomano romano = new ConversorDeNumeroRomano();
+        final int numero = romano.converte("IX");
+        assertEquals(9, numero);
+    }
 
+    @Test
+    public void deveEntenderNumerosComplexosComoXXIV() {
+        final ConversorDeNumeroRomano romano = new ConversorDeNumeroRomano();
+        final int numero = romano.converte("XXIV");
+        assertEquals(24, numero);
+    }
 
 }
