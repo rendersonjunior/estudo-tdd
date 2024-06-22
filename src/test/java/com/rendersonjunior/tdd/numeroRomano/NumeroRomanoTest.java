@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class ConversorDeNumeroRomanoTest {
+public class NumeroRomanoTest {
 
     @Test
     public void deveEntenderOSimboloI() {
@@ -26,5 +26,14 @@ public class ConversorDeNumeroRomanoTest {
         final int numero = romano.converte("II");
         assertEquals(2, numero);
     }
+
+    @Test
+    public void deveEntenderQuatroSimbolosDoisADoisComoXXII() {
+        final ConversorDeNumeroRomano romano = new ConversorDeNumeroRomano();
+        final int numero = romano.converte("XXII");
+        assertEquals(22, numero);
+    }
+
+
 
 }
