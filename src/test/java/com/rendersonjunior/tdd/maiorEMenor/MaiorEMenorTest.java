@@ -3,7 +3,7 @@ package com.rendersonjunior.tdd.maiorEMenor;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestaMaiorEMenor {
+public class MaiorEMenorTest {
     @Test
     public void ordemDecrescente() {
         final var carrinho = new CarrinhoDeCompras();
