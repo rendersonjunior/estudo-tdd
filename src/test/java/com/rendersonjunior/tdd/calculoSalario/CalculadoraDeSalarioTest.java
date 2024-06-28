@@ -17,4 +17,15 @@ public class CalculadoraDeSalarioTest {
         assertEquals(1500.0 * 0.9, salario, 0.00001);
     }
 
+    @Test
+    public void deveCalcularSalarioParaDesenvolvedoresComSalarioAcimaDoLimite() {
+
+        final CalculadoraDeSalario calculadora = new CalculadoraDeSalario();
+        final Funcionario desenvolvedor = new Funcionario("Mauricio", 4000.0, Cargo.DESENVOLVEDOR);
+
+        final Double salario = calculadora.calculaSalario(desenvolvedor);
+
+        assertEquals(4000.0 * 0.8, salario, 0.00001);
+    }
+
 }
