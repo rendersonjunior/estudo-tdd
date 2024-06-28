@@ -1,4 +1,4 @@
-package com.rendersonjunior.tdd.numeroRomano;
+package com.rendersonjunior.tdd.numeroRomano.enumerate;
 
 public enum EnumTabelaNumeroRomano {
     I(1),

@@ -1,5 +1,8 @@
 package com.rendersonjunior.tdd.calculoSalario;
 
+import com.rendersonjunior.tdd.calculoSalario.enumerate.Cargo;
+import com.rendersonjunior.tdd.calculoSalario.model.Funcionario;
+import com.rendersonjunior.tdd.calculoSalario.service.CalculadoraDeSalario;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

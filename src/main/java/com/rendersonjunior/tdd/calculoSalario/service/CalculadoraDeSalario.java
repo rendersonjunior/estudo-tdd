@@ -1,4 +1,6 @@
-package com.rendersonjunior.tdd.calculoSalario;
+package com.rendersonjunior.tdd.calculoSalario.service;
+
+import com.rendersonjunior.tdd.calculoSalario.model.Funcionario;
 
 public class CalculadoraDeSalario {
 

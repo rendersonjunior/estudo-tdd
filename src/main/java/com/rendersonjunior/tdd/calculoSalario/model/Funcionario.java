@@ -1,4 +1,6 @@
-package com.rendersonjunior.tdd.calculoSalario;
+package com.rendersonjunior.tdd.calculoSalario.model;
+
+import com.rendersonjunior.tdd.calculoSalario.enumerate.Cargo;
 
 public class Funcionario {
 
