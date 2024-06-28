@@ -1,5 +1,8 @@
 package com.rendersonjunior.tdd.maiorEMenor;
 
+import com.rendersonjunior.tdd.maiorEMenor.model.Produto;
+import com.rendersonjunior.tdd.maiorEMenor.service.CarrinhoDeCompras;
+import com.rendersonjunior.tdd.maiorEMenor.service.MaiorEMenor;
 import org.junit.Assert;
 import org.junit.Test;
 

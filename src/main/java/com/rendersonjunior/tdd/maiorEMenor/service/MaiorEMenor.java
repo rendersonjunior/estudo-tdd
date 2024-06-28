@@ -1,4 +1,6 @@
-package com.rendersonjunior.tdd.maiorEMenor;
+package com.rendersonjunior.tdd.maiorEMenor.service;
+
+import com.rendersonjunior.tdd.maiorEMenor.model.Produto;
 
 import static java.util.Objects.isNull;
 
@@ -24,10 +26,6 @@ public class MaiorEMenor {
 
     public Produto getMaior() {
         return  maior;
-    }
-
-    public static void main(String[] args) {
-        System.out.println("MaiorEMenor");
     }
 
 }

@@ -1,12 +1,14 @@
-package com.rendersonjunior.tdd.maiorEMenor;
+package com.rendersonjunior.tdd.maiorEMenor.service;
+
+import com.rendersonjunior.tdd.maiorEMenor.model.Produto;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CarrinhoDeCompras {
-    private List<Produto> produtoList;
+    private final List<Produto> produtoList;
 
-    CarrinhoDeCompras() {
+    public CarrinhoDeCompras() {
         this.produtoList = new ArrayList<>();
     }
 

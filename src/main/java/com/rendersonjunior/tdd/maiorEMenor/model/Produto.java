@@ -1,11 +1,11 @@
-package com.rendersonjunior.tdd.maiorEMenor;
+package com.rendersonjunior.tdd.maiorEMenor.model;
 
 public class Produto {
     private String nome;
     private Double valor;
 
-    Produto(final String nome,
-            final Double valor) {
+    public Produto(final String nome,
+                   final Double valor) {
         this.nome = nome;
         this.valor = valor;
     }
