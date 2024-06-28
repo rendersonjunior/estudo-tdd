@@ -6,6 +6,7 @@ import java.util.Map;
 public class ConversorDeNumeroRomano {
 
     /*
+    Exemplo com Map
     private static Map<String, Integer> tabela = new HashMap<>() {{
         put("I", 1);
         put("V", 5);
