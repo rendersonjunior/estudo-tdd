@@ -1,6 +1,7 @@
 package com.rendersonjunior.tdd.carrinhoDeCompras;
 
-import com.rendersonjunior.tdd.carrinhoDeCompras.model.MaiorPreco;
+import com.rendersonjunior.tdd.carrinhoDeCompras.model.Item;
+import com.rendersonjunior.tdd.carrinhoDeCompras.service.MaiorPreco;
 import com.rendersonjunior.tdd.carrinhoDeCompras.service.CarrinhoDeCompras;
 import org.junit.Test;
 
@@ -16,6 +17,17 @@ public class CarrinhoDeComprasTest {
         final var valor = algoritmo.encontra(carrinho);
 
         assertEquals(0.0, valor, 0.0001);
+    }
+
+    @Test
+    public void deveRetornarValorDoItemSeCarrinhoCom1Elemento() {
+        final var carrinho = new CarrinhoDeCompras();
+        carrinho.adiciona(new Item("Geladeira", 1, 900.00));
+
+        final var algoritmo = new MaiorPreco();
+        final var valor = algoritmo.encontra(carrinho);
+
+        assertEquals(900.0, valor, 0.0001);
     }
 
 }

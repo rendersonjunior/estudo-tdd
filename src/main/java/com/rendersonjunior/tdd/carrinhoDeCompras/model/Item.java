@@ -26,7 +26,7 @@ public class Item {
         return valorUnitario;
     }
 
-    private Double getValorTotal() {
+    public Double getValorTotal() {
         return this.valorUnitario * this.quantidade;
     }
 
