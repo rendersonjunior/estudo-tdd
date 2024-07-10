@@ -3,7 +3,6 @@ package com.rendersonjunior.tdd.carrinhoDeCompras.service;
 import com.rendersonjunior.tdd.carrinhoDeCompras.model.Item;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -22,5 +21,13 @@ public class CarrinhoDeCompras {
     public List<Item> getItens() {
         return Collections.unmodifiableList(this.itens);
     }
+
+    public Double maiorValor() {
+        return this.getItens().stream()
+                .map(Item::getValorTotal)
+                .max(Double::compareTo)
+                .orElse(0.0);
+    }
+
 
 }
