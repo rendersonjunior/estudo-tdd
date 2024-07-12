@@ -29,5 +29,11 @@ public class CarrinhoDeCompras {
                 .orElse(0.0);
     }
 
+    public Double valorTotal() {
+        return this.getItens().stream()
+                .map(item -> item.getQuantidade() * item.getValorTotal())
+                .reduce(0.0, Double::sum);
+    }
+
 
 }

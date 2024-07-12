@@ -33,4 +33,14 @@ public class CarrinhoDeComprasTest {
         assertEquals(1500.0, carrinho.maiorValor(), 0.0001);
     }
 
+    @Test
+    public void deveRetornarValorTotalDosProdutosDoCarrinho() {
+        final var carrinho = new CarrinhoDeCompras();
+        carrinho.adiciona(new Item("Geladeira", 1, 900.0));
+        carrinho.adiciona(new Item("Fogão", 1, 1500.0));
+        carrinho.adiciona(new Item("Máquina de Lavar", 1, 750.0));
+
+        assertEquals(3150.0, carrinho.valorTotal(), 0.0001);
+    }
+
 }
